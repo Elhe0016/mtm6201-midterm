@@ -1,3 +1,4 @@
+
 :root{
     --mylime: #c2d82e;
     --myblue: #019fb7;
@@ -17,7 +18,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     padding:0;
     color:var(--mylime);
     background-color:#5e4375;
@@ -26,29 +27,32 @@ body {
 
 nav {
     background: var(--myblue);
-    display: flex;
-    padding: 2% 6%;
     align-items: center;
     justify-content:space-between;
     width: 100%;
-    height: 100px;
+    margin: auto;
     }
 
     nav img{
         width: 200px;
-    }
+        }
 
     .navbar{
-        flex:1;
-        text-align: center;
+        margin:auto;
+        width: 65%;
     }
+    
 
     .navbar ul li{
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        }
+    
    
     .navbar ul li a{
         color: var(--mylime);
@@ -72,13 +76,13 @@ nav {
        }
 
     .searchbar{
-        margin-right: 200px;
+        margin-left: 7em;
+        padding-bottom: 2px;;
     }
     h1, h2, h3, h4, h5, h6, p{
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
 
     .main-banner::before{
         position: relative;
@@ -101,7 +105,6 @@ nav {
     clip-path: circle(180vh at 50% -80vh);
     isolation: isolate;
     display:flex;
-
 } 
 
 .mainbannertext{
@@ -109,15 +112,15 @@ nav {
     display: grid;
     z-index:1;
     max-width: 500px;
-    margin-left: 100px;
     justify-content: center;    
     text-align: center;
+    margin: 1.2rem;
 }
     
 
 .main-banner h1{
-    font-size: 50px;
-    margin-top: 50px;
+    font-size: 3rem;
+    margin-top: 1.2rem;
     color:#5e4375;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
@@ -130,7 +133,11 @@ nav {
     padding-top:0;
     color:var(--mypink);
   }
-  
+
+  .bannerimg{
+    display: none;
+}
+
   @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -139,12 +146,6 @@ nav {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  
-}
-.bannerimg{
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 75px;
 }
 
 a.neonbtn{
@@ -209,15 +210,132 @@ a.neonbtn:focus {
     opacity: 1;
 }
 
-
-
-
-@media screen (max-width: 700px){
-font-size: 10px;}
-.wrapper{
-    margin-left: 10px;
-    margin-right: 10px;
-    
+.carousel{
+    position:relative;
+    align-items: center;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left:0;
+    animation: 10s slider infinite;
+   
+}
+#slider figure img{
+    width: 20%;
+    float:left;
+}
+    footer {    
+    font-size: 0.75rem;
+}
+@keyframes slider {
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+    100%{
+        left:-400%;
+    }
+ 
+}
+
+.arrows{
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar {all: unset;}
+    nav {
+        background: var(--myblue);
+        display: flex;
+        padding: 2% 6%;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        max-height: 100px;
+        }
     
+        nav img{
+            width: 200px;
+        }
+    
+        .navbar{
+            flex:1;
+            text-align: center;
+        }
+    
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+       
+        .navbar ul li a{
+            color: var(--mylime);
+            font-size: 1.5 rem;
+            text-decoration: none;
+        }
+    
+        .navbar ul li::after{
+            content:'';
+            width: 0%;
+            height: 2px;
+            background-color: #5e4375;
+            display:block;
+            margin:auto;
+            transition: 0.5s;
+        }
+    
+        .navbar ul li:hover::after{
+           width: 100%;
+           transition: 1s;
+           }
+    
+        .searchbar{
+            margin-right: 200px;
+        }
+
+   
+        .bannerimg{
+            display:inline-block;
+            position: relative;
+        }
+        .carousel{
+         margin: auto;
+         max-width: 500px;
+        }
+
+}
