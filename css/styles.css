@@ -24,7 +24,7 @@ body {
     background-color:#5e4375;
     font-size: 18px;
 }
-
+/*
 nav {
     background: var(--myblue);
     align-items: center;
@@ -83,7 +83,7 @@ nav {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
+*/
     .main-banner::before{
         position: relative;
         width:100%;
