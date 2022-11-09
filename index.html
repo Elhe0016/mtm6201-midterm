@@ -15,35 +15,39 @@
 
 <body>
     <header> <!--create a responsive nav bar for desktop and mobile-->
-   <nav>
-           
-        <a href="index.html"> <img src="images/logo.png" alt="logo"></a>   
-        <div class="navbar">
+    <a href="index.html"> <img src="images/logo.png" alt="logo" class="logo"></a>   
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav> 
             <ul>
-            <li class="home"><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Our Products</a></li>
-            <li class="aboutnav"><a href="aboutus.html">About Us</a></li>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="categories"><a href="categories.html">Our Products</a></li>
+                <li class="aboutnus"><a href="aboutus.html">About Us</a></li>
             </ul>
-        </div>
+        </nav> 
             <div class="searchbar">
             <input type="text" placeholder="Search">      
             <i class="fa-solid fa-magnifying-glass"></i>
             </div>   
-    </nav>
+            <label for ="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            </label>
     </header>
+
+
+
+
     <div class="main-banner">
-            <div class="mainbannertext">
+        <div class="mainbannertext">
             <h1> A Flavour for every mood</h1> 
             <p>Welcome to Addict Creations, The one and only bakery thaat is specialized in creating cake pops according to your mood. You can order our special devil food cake for a divorce party (salted caramel flavour) or if you are having a baby shower you could get the exciting cake pop (confetti cake with fudge icing). We also promise our clients healthier options that are baked for different types of diets</p>
             <a href="categories.html" class="neonbtn">Order Now </a>
             <div>
-        
-        </div>
-
     </div>
+    </div>
+
     <div class="bannerimg"> 
     <img src="images/banner22.png" alt="banner">
-        </div>   
+    </div>   
 
         <!--  responsive image code
               <img srcset=" 
@@ -68,14 +72,44 @@
         <img src="images/pops4-400_x_400.jpg" alt="Featured Product-4">
         <img src="images/pops1-400_x_400.jpg" alt="Featured Product-5">
         </figure>
-</div>
-
+    </div>
 </div>
 
 </body>
    
-    <footer> 
-        <p> &copy; Copywrite Addict Creations, 2020 </p> 
-    </footer>
+<footer> 
+    <div class="footer">
+    <div class="footer-heading footer-1">
+        <h3> Shopping Information</h3>
+        <a href="#"> Store Locator</a>
+        <a href="#"> FAQ</a>
+        <a href="#"> Delivery Information</a>
+    </div>  
+    <div class="footer-heading footer-2">
+        <h3> Social Media</h3>
+        <a href="#"> Facebook</a>
+        <a href="#"> Instagram</a>
+        <a href="#"> You Tube</a>
+    </div> 
+    <div class="footer-heading footer-2">
+        <h3> Contact us</h3>
+        <a href="#"> Contact Us</a>
+        <a href="#"> Support</a>
+    </div>   
+         
+<div class="footer-email-form">
+<h3> Join our newsletter</h3> 
+<input type="email" placeholder="Enter your email address" id="footer-email">
+<input type="submit" value="Sign Up" id="footer-email-btn">
+</div> 
+</div>
+<div class="copyright">
+<p> &copy; Copyright Addict Creations, 2020 </p> 
+</div>
+
+   
+
+
+</footer>
 
 </html>
