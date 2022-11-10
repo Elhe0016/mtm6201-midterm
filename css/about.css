@@ -26,6 +26,7 @@ body {
 
 P{
     color:#fff;
+    margin-top: 10px;
 }
 /*responsive header, hamburger menu for mobile*/
 header {
@@ -143,11 +144,24 @@ position: relative;
     margin-left: 20px;
     padding: 15px;
     }
-
-  .Contactuswrapper{
-    margin: 0 30%;
+/* the end of nav bar and start of about us*/
+.wrapper{
     width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.video{
+display: flex;
+justify-content: center;
+padding:10px;
+margin-top: 30px;
+width: 50%;
+}
+
+/*this is to create a responsive footer*/
 footer{
     background-color: var(--myblue);  
     padding-bottom: 4rem;
@@ -160,6 +174,7 @@ footer{
       justify-content: center;
       flex-wrap: wrap;
       margin: 0 auto;
+      color: var(--mylime);
   }
   
   .footer-heading {
@@ -224,6 +239,10 @@ footer{
       align-items: center;
       margin-top: 10px;
   }
+
+  .copyright p{
+    color: var(--mylime);
+  }
   
   /*media query for desktop, tablet will use mobile settings*/
   
@@ -276,4 +295,14 @@ footer{
       footer{
         height: 25vh;
       }
+
+      .video{
+        width: 100%;
+        }
+
+       
+.aboutustxt{
+margin-left: 90px;
+width: 80%;
+}
     }  
