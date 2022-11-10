@@ -165,7 +165,7 @@ width: 50%;
 footer{
     background-color: var(--myblue);  
     padding-bottom: 4rem;
-    height: 35vh;
+    height: 50vh;
   }
   
   .footer{
@@ -243,7 +243,7 @@ footer{
   .copyright p{
     color: var(--mylime);
   }
-  
+
   /*media query for desktop, tablet will use mobile settings*/
   
   @media screen and (min-width: 720px) 
