@@ -397,7 +397,7 @@ footer{
     border: none;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
-    color: gainsboro;
+    color: var(--mypurple);
     margin-left: 0.2rem;
     margin-top: 5px;
 }
