@@ -518,8 +518,8 @@ footer{
         }
        */
         .bannerimg{
-            display: inline-block; 
-            margin-left: 600px; 
+            display: inline-flex; 
+            margin-left: calc(100% - 700px);
         }
 
         .mainbannertext{
