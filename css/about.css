@@ -159,7 +159,10 @@ justify-content: center;
 padding:10px;
 margin-top: 30px;
 width: 50%;
+margin: auto;
+position: relative;
 }
+
 .products{
     width: 80%;
     display: flex;
@@ -260,6 +263,7 @@ footer{
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
+      color: var(--mylime);
   }
 
   /*media query for desktop, tablet will use mobile settings*/
