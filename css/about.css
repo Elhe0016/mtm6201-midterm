@@ -184,10 +184,11 @@ img{
     }    
 
 /*this is to create a responsive footer*/
+
 footer{
     background-color: var(--myblue);  
     padding-bottom: 4rem;
-    height: 50vh;
+    height: 35vh;
   }
   
   .footer{
@@ -196,7 +197,6 @@ footer{
       justify-content: center;
       flex-wrap: wrap;
       margin: 0 auto;
-      color: var(--mylime);
   }
   
   .footer-heading {
@@ -260,10 +260,6 @@ footer{
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
-  }
-
-  .copyright p{
-    color: var(--mylime);
   }
 
   /*media query for desktop, tablet will use mobile settings*/
