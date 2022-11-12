@@ -14,10 +14,18 @@
 </head>
 
 <body>
-    <header> <!--create a responsive nav bar for desktop and mobile-->
+    <header> 
+       <!--Skip links-->
+       <ul class="skip-links"> 
+        <li><a href="#main-nav"> Main Navigation</a></li>
+        <li><a href="#media"> Products Video</a></li>
+        <li><a href="#about"> About Us</a></li>
+    </ul>   
+
+    <!--create a responsive nav bar for desktop and mobile-->
     <a href="index.html"> <img src="images/logo.png" alt="logo" class="logo"></a>   
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav> 
+    <nav class="nav" id="main-nav" role="navigation" aria-label="main-nav">
             <ul>
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="aboutnus"><a href="aboutus.html">About Us</a></li>
@@ -25,7 +33,7 @@
                 <li class="contactus"><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav> 
-            <div class="searchbar">
+            <div class="searchbar" role="search">
             <input type="text" placeholder="Search">      
             <i class="fa-solid fa-magnifying-glass"></i>
             </div>   
@@ -33,27 +41,24 @@
             <span></span>
             </label>
     </header>
-</body>
+
 <div class="wrapper">
-<div class="video">
-<video autoplay src="video/addict-creation.mp4" loop width="800px">
-    <source src=" video/addict-creation.mp4">
-    <source src=" video/addict-creation.webm">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rAhNNu67csY" title="Addict Creations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
+    <div class="video" id="media">
+    <video autoplay src="
+        video/addict-creation.mp4">;
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rAhNNu67csY" title="Addict Creations" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </video>   
+    </div>
 
-</video>   
+    <div class="aboutustxt" id="about" role="main">
+    <h1> About Us</h1>
+    <p>Addict Creations is exceptional Cake Pops bakery, as we craft cake pops based on the customers’ mood. We are also considering male special flavours such as bacon icing.</p>
+    <p>Crafting Cake pops based on mood is a creative idea. Run today to discover the menu and different flavours. Cake Pops are not necessary for kids only, Male customers can also enjoy the male flavours. We also provide the fruit sweetened cake pops for children as a healthy yummy alternative to sugar, especially the cake pops that is sweetened with dates and banana due to the high nutrition value of them. </p> 
+    <p> Keto diet followers are not forgettable, you can get a yummy low carb treat. </p>     
+    <p> On the top of the extensive menu, flavours and nutrition values, Addict Creations also offer delivery within the Ottawa area through Ubereats, Doordash and Skip the Dish which will make them one click away from their customers.</p>    
+    </div>
 </div>
-<div class="aboutustxt">
-<h1> About Us</h1>
-<p>Addict Creations is exceptional Cake Pops bakery, as we craft cake pops based on the customers’ mood. We are also considering male special flavours such as bacon icing.</p>
-<p>Crafting Cake pops based on mood is a creative idea. Run today to discover the menu and different flavours. Cake Pops are not necessary for kids only, Male customers can also enjoy the male flavours. We also provide the fruit sweetened cake pops for children as a healthy yummy alternative to sugar, especially the cake pops that is sweetened with dates and banana due to the high nutrition value of them. </p> 
-<p> Keto diet followers are not forgettable, you can get a yummy low carb treat. </p>     
-<p> On the top of the extensive menu, flavours and nutrition values, Addict Creations also offer delivery within the Ottawa area through Ubereats, Doordash and Skip the Dish which will make them one click away from their customers.</p>    
-</p>
 
-</div>
-</div>
 <footer> 
     <div class="footer">
     <div class="footer-heading footer-1">
@@ -74,17 +79,15 @@
         <a href="#"> Support</a>
     </div>   
 
-    
-<div class="footer-email-form">
-<h3> Join our newsletter</h3> 
-<input type="email" placeholder="Enter your email address" id="footer-email">
-<input type="submit" value="Sign Up" id="footer-email-btn">
-</div> 
-</div>
-<div class="copyright">
-<p> &copy; Copyright Addict Creations, 2020 </p> 
-</div>
-
+    <div class="footer-email-form">
+    <h3> Join our newsletter</h3> 
+    <input type="email" placeholder="Enter your email address" id="footer-email">
+    <input type="submit" value="Sign Up" id="footer-email-btn">
+    </div> 
+    </div>
+    <div class="copyright">
+    <p> &copy; Copyright Addict Creations, 2020 </p> 
+    </div>
 </footer>
-
+</body>
 </html>

@@ -6,11 +6,7 @@
     --mypurple: #54386d; 
     --myneon: hsl(317 100% 54%);
     --mybg:hsl(323 21% 16%)}
-/*
-    h1, h2, h3, h4, h5, h6, p{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }*/
+
 *{
     margin:0;
     padding:0;
@@ -20,6 +16,9 @@
     box-sizing: border-box;
     
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     margin: 0px;
@@ -28,6 +27,32 @@ body {
     background-color:var(--myblue);
     font-size: 12px;
 }
+P{
+    color:#fff;
+}
+
+
+/* skip links  */
+
+  .skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .skip-links a:focus{
+    top: 0;
+  }
+
 
 /*responsive header, hamburger menu for mobile*/
 header {
@@ -198,7 +223,6 @@ position: relative;
     margin-left: 0;
     margin-top: 1.2rem;
     padding-top:0;
-    background-color: rgb(0 10 10 0);
     color:#FFF;
   }
   
@@ -208,7 +232,7 @@ display: none;
 
 /* animation for the button*/
 
-@-webkit-keyframes glow {
+@keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -289,13 +313,13 @@ a.neonbtn:focus {
     margin-right: 20px;
 }
 
-#slider{
+.slider{
     overflow: hidden;
     margin-bottom: 10px;
 
 }
 
-#slider figure{
+.slider figure{
     position: relative;
     width: 500%;
     margin: 0;
@@ -303,7 +327,7 @@ a.neonbtn:focus {
     animation: 10s slider infinite;
    
 }
-#slider figure img{
+.slider figure img{
     width: 20%;
     float:left;
 }

@@ -14,12 +14,20 @@
 </head>
 
 <body>
-    <div class="container">
-    <header> <!--create a responsive nav bar for desktop and mobile-->
+<div class="container">
+    <header role="banner"> 
+    <!--Skip links-->
+    <ul class="skip-links"> 
+        <li><a href="#nav"> Main Navigation</a></li>
+        <li><a href="#banner"> main-banner</a></li>
+        <li><a href="#products"> Featured Products</a></li>
+    </ul>   
+        
+    <!--create a responsive nav bar for desktop and mobile-->
     <a href="index.html"> <img src="images/logo.png" alt="logo" class="logo"></a>   
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav> 
-            <ul>
+    <nav class="main-nav" id="nav" role="navigation" aria-label="main-nav">
+        <ul>
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="aboutnus"><a href="aboutus.html">About Us</a></li>
                 <li class="categories"><a href="categories.html">Our Products</a></li>
@@ -27,8 +35,9 @@
 
             </ul>
         </nav> 
-            <div class="searchbar">
-            <input type="text" placeholder="Search">      
+            <div class="searchbar" role="search">
+            <label for="searchbar"> <span></span> </label>
+            <input type="text" id="searchbar" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
             </div>   
             <label for ="nav-toggle" class="nav-toggle-label">
@@ -36,32 +45,21 @@
             </label>
     </header>
 
-    <div class="main-banner">
+    <div class="main-banner" id="banner" role="banner">
         <div class="mainbannertext">
             <h1> A Flavour for every mood</h1> 
             <p>Welcome to Addict Creations, The one and only bakery that is specialized in creating cake pops according to your mood. You can order our special devil food cake for a divorce party (salted caramel flavour) or if you are having a baby shower you could get the exciting cake pop (confetti cake with fudge icing). We also promise our clients healthier options that are baked for different types of diets</p>
             <a href="categories.html" class="neonbtn">Order Now </a>
             <div>
-    </div>
-    </div>
+            </div>
+            </div>
 
-    <div class="bannerimg"> 
-    <img src="images/banner22.png" alt="banner"> <!--This image will not display in small devices-->
-    </div>   
+            <div class="bannerimg   "> 
+            <img src="images/banner22.png" alt="banner"> <!--This image will not display in small devices-->
+            </div>   
 
-        <!--  responsive image code
-              <img srcset=" 
-        images/banner22-320.png 320w,
-        images/banner22-640.png 640w,
-        images/banner22.png 1024w" 
-        sizes="
-        (max-width: 320px) 320px,
-        (max-width: 640px) 640px,
-        (max-width: 1024px) 1024px"
-        src="images/banner22.png" alt="banner">
-            </div>   -->
 </div>
-<div class="carousel">
+<div class="carousel" id="products">
     <div class="carouseltext">
     <h2>Our Featured Products</h2>
         <p>Addict Creations is exceptional Cake Pops bakery, as we craft cake pops based on the customers’ mood. We are also considering male special flavours such as bacon icing.</p>
@@ -70,7 +68,7 @@
         <p> On the top of the extensive menu, flavours and nutrition values, Addict Creations also offer delivery within the Ottawa area through Ubereats, Doordash and Skip the Dish which will make them one click away from their customers.</p>    
     
     </div>   
-    <div id="slider">
+    <div class="slider">
         <figure>
         <img src="images/pops1-400_x_400.jpg" alt="Featured Product-1">
         <img src="images/pops2-400_x_400.jpg" alt="Featured Product-2">
@@ -81,7 +79,6 @@
     </div>
 </div>
 </div>
-</body>
    
 <footer> 
     <div class="footer">
@@ -105,6 +102,7 @@
          
 <div class="footer-email-form">
 <h3> Join our newsletter</h3> 
+<label for="footer-email"> <span></span> </label>
 <input type="email" placeholder="Enter your email address" id="footer-email">
 <input type="submit" value="Sign Up" id="footer-email-btn">
 </div> 
@@ -114,5 +112,5 @@
 </div>
 
 </footer>
-
+</body>
 </html>
