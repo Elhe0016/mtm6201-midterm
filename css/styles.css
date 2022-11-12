@@ -1,9 +1,9 @@
 
 :root{
     --mylime: #c2d82e;
-    --myblue: #019fb7;
+    --myblue: #055d6a;
     --mypink: #e83f70; 
-    --mypurple: #5e4375; 
+    --mypurple: #54386d; 
     --myneon: hsl(317 100% 54%);
     --mybg:hsl(323 21% 16%)}
 /*
@@ -25,7 +25,7 @@ body {
     margin: 0px;
     padding:0;
     color:var(--mylime);
-    background-color:#019fb7;
+    background-color:var(--myblue);
     font-size: 12px;
 }
 
@@ -177,6 +177,10 @@ position: relative;
     text-align: center;
     margin: 1.2rem;
     font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     }
     
 

@@ -1,50 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Term Project - Elhe0016</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Poppins:wght@300;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99d246f297.js" crossorigin="anonymous"></script>
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header> <!--create a responsive nav bar for desktop and mobile-->
+    <a href="index.html"> <img src="images/logo.png" alt="logo" class="logo"></a>   
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav> 
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="aboutnus"><a href="aboutus.html">About Us</a></li>
+                <li class="categories"><a href="categories.html">Our Products</a></li>
+                <li class="contactus"><a href="contactus.html">Contact Us</a></li>
+
+            </ul>
+        </nav> 
+            <div class="searchbar">
+            <input type="text" placeholder="Search">      
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div>   
+            <label for ="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            </label>
+    </header>
+ 
+    <!--  responsive image code-->
 <div class="products">
-    <h1> Popsicle style </h1>
-    <img srcset=" 
-    images/pops4-200_x_200.jpg 320w,
-    images/pops4-400_x_400.jpg 640w,
-    images/pops4-600_x_600.jpg 1024w" 
-    sizes="
-    (max-width: 320px) 320px,
-    (max-width: 640px) 640px,
-    (max-width: 1024px) 1024px"
-    src="images/pops4-400_x_400.jpg" alt="banner">
-        </div>
-        <div class="products">
+    <h1> Products Gallery </h1>
+    <img 
+     srcset="images/pops1-400.jpg 720w,
+             images/pops1-350.jpg 1024w"
+     sizes="(max-width: 720px) 720px,
+           (max-width: 1024px) 1024px"
+     src="images/pops1-350.jpg"
+     alt="Our Products image 1 ">
 
-        <img src="images/pops1.jpg" alt="pops1">
-        <img src="images/pops1-100.jpg" alt="pops100">
-        <img src="images/pops1-150_x_150.jpg" alt="pops102">
-        <img src="images/pops1-200_x_200.jpg" alt="pops103">
-        <img src="images/pops1-400_x_400.jpg" alt="pops104">
-        <img src="images/pops1-600_x_600.jpg" alt="pops105">
-
-
-            <h1> Popsicle style </h1>
-            <img srcset=" 
-            images/pops1-150.jpg 320w,
-            images/pops1.jpg 1024w" 
-            sizes="
-            (max-width: 320px) 320px,
+    <img 
+     srcset="images/pops5-400.jpg 720w,
+             images/pops5-350.jpg 1024w"
+     sizes="(max-width: 720px) 720px,
             (max-width: 1024px) 1024px"
-            src="images/pops4-400_x_400.jpg" alt="banner">
-                </div> 
-       
-</div>
-
-
-
-</div>
-<div class="carousel">
-<h2>Our Featured Products</h2>
+     src="images/pops5-350.jpg"
+     alt="Our Products image 2 ">
     
-<div id="slider">
-    <figure>
-    <img src="images/pops1-400_x_400.jpg" alt="Featured Product-1">
-    <img src="images/pops2-400_x_400.jpg" alt="Featured Product-2">
-    <img src="images/pops7-400_x_400.jpg" alt="Featured Product-3">
-    <img src="images/pops4-400_x_400.jpg" alt="Featured Product-4">
-    <img src="images/pops1-400_x_400.jpg" alt="Featured Product-5">
-    </figure>
+    <img 
+     srcset="images/pops2-400.jpg 720w,
+             images/pops2-350.jpg 1024w"
+     sizes="(max-width: 720px) 720px,
+            (max-width: 1024px) 1024px"
+     src="images/pops2-350.jpg"
+     alt="Our Products image 3 ">
+</div>  
+
+</body>
+   
+<footer> 
+    <div class="footer">
+    <div class="footer-heading footer-1">
+        <h3> Shopping Information</h3>
+        <a href="#"> Store Locator</a>
+        <a href="#"> FAQ</a>
+        <a href="#"> Delivery Information</a>
+    </div>  
+    <div class="footer-heading footer-2">
+        <h3> Social Media</h3>
+        <a href="#"> Facebook</a>
+        <a href="#"> Instagram</a>
+        <a href="#"> You Tube</a>
+    </div> 
+    <div class="footer-heading footer-2">
+        <h3> Contact us</h3>
+        <a href="contactus.html"> Contact Us</a>
+        <a href="#"> Support</a>
+    </div>   
+         
+<div class="footer-email-form">
+<h3> Join our newsletter</h3> 
+<input type="email" placeholder="Enter your email address" id="footer-email">
+<input type="submit" value="Sign Up" id="footer-email-btn">
+</div> 
 </div>
+<div class="copyright">
+<p> &copy; Copyright Addict Creations, 2020 </p> 
 </div>
+
+</footer>
+
+</html>
+
