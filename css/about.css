@@ -1,8 +1,8 @@
 :root{
-    --mylime: #c2d82e;
-    --myblue: #019fb7;
+--mylime: #c2d82e;
+    --myblue: #055d6a;
     --mypink: #e83f70; 
-    --mypurple: #5e4375; 
+    --mypurple: #54386d; 
     --myneon: hsl(317 100% 54%);
     --mybg:hsl(323 21% 16%)}
 
@@ -160,6 +160,28 @@ padding:10px;
 margin-top: 30px;
 width: 50%;
 }
+.products{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+img{
+    width: 350px;
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    }    
 
 /*this is to create a responsive footer*/
 footer{
