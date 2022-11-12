@@ -289,6 +289,7 @@ footer{
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
+      color: var(--mylime);
   }
   
   /*media query for desktop, tablet will use mobile settings*/
